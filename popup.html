@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating PiP</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Floating PiP</h1>
+      <p id="status" class="status">Cerca un video nella scheda attiva...</p>
+      <div class="controls">
+        <button id="pipButton" type="button">Apri PiP</button>
+        <div class="volume">
+          <label for="volumeRange">Volume</label>
+          <input id="volumeRange" type="range" min="0" max="100" value="100" />
+        </div>
+        <button id="nextButton" type="button">Prossimo video</button>
+      </div>
+      <p class="hint">Funziona con i tag &lt;video&gt; e su YouTube.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

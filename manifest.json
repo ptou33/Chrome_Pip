@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Floating Video PiP",
+  "version": "1.0.0",
+  "description": "Porta il video corrente in modalità Picture-in-Picture flottante con controlli per volume e riproduzione successiva.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Apri video in PiP",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
